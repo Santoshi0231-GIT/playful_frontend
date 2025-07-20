@@ -67,6 +67,8 @@ const Home = () => {
       <section className="relative min-h-[90vh] flex items-center justify-center gradient-hero">
         <div className="container mx-auto px-4 text-center">
           <div className={`transition-all duration-1000 ${isVisible ? 'animate-fade-in' : 'opacity-0'}`}>
+            
+      
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6 leading-tight">
               A Plateful of <span className="text-primary">Home</span>
               <br />in Every Bite

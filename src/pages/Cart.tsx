@@ -19,7 +19,7 @@ const Cart = () => {
     },
     {
       id: 2,
-      name: "Fresh Garden Salad",
+      name: "",
       price: 8.99,
       quantity: 1,
       image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400",
@@ -162,10 +162,10 @@ const Cart = () => {
                         </div>
                         <div className="text-right">
                           <p className="text-lg font-bold text-primary">
-                            ${(item.price * item.quantity).toFixed(2)}
+                            Rs. {(item.price * item.quantity).toFixed(2)}
                           </p>
                           <p className="text-sm text-muted-foreground">
-                            ${item.price.toFixed(2)} each
+                            Rs. {item.price.toFixed(2)} each
                           </p>
                         </div>
                       </div>
@@ -250,7 +250,7 @@ const Cart = () => {
                 {subtotal < 25 && (
                   <div className="mt-4 p-3 bg-accent rounded-lg">
                     <p className="text-sm text-foreground">
-                      Add ${(25 - subtotal).toFixed(2)} more for free delivery!
+                      Add Rs. {(25 - subtotal).toFixed(2)} more for free delivery!
                     </p>
                   </div>
                 )}

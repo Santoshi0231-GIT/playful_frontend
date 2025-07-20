@@ -18,8 +18,8 @@ const Shop = () => {
   const products = [
     {
       id: 1,
-      name: "Grandma's Chicken Curry",
-      price: 12.99,
+      name: "Laddoo",
+      price: 25,
       rating: 4.8,
       reviews: 124,
       image: "https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400",
@@ -57,11 +57,11 @@ const Shop = () => {
     },
     {
       id: 4,
-      name: "Classic Pancakes",
-      price: 9.99,
+      name: "",
+      price: 90,
       rating: 4.6,
       reviews: 142,
-      image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400",
+      image: "https://mail.google.com/mail/u/0?ui=2&ik=c60b78f42e&attid=0.1&permmsgid=msg-f:1838152366512763718&th=19826dd6a1097346&view=att&disp=safe&realattid=f_mdbe5k2b0&zw",
       chef: "Morning Glory Kitchen",
       category: "main",
       mealType: "breakfast",
@@ -83,15 +83,15 @@ const Shop = () => {
     },
     {
       id: 6,
-      name: "Buddha Bowl",
-      price: 11.99,
+      name: "Selroti",
+      price: 20,
       rating: 4.5,
       reviews: 67,
       image: "https://images.unsplash.com/photo-1546793665-c74683f339c1?w=400",
       chef: "Healthy Bites",
-      category: "bowl",
-      mealType: "lunch",
-      tags: ["healthy", "vegan"],
+      category: "breakfast",
+      mealType: "breakfast",
+      tags: ["sweet", "fluffy"],
       cookTime: "12 mins"
     }
   ];
@@ -206,12 +206,12 @@ const Shop = () => {
             {/* Price Range */}
             <div>
               <label className="text-sm font-medium text-foreground mb-2 block">
-                Price Range: ${priceRange[0]} - ${priceRange[1]}
+                Price Range: Rs. {priceRange[0]} - Rs. {priceRange[10000]}
               </label>
               <Slider
                 value={priceRange}
                 onValueChange={setPriceRange}
-                max={50}
+                max={10000}
                 min={0}
                 step={1}
                 className="w-full"
